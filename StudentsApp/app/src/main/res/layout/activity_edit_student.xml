@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="137dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:text="Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="ID:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvId"
+        app:layout_constraintStart_toEndOf="@+id/tvId"
+        app:layout_constraintTop_toTopOf="@+id/tvId" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Phone:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPhone"
+        app:layout_constraintStart_toEndOf="@+id/tvPhone"
+        app:layout_constraintTop_toTopOf="@+id/tvPhone" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Address:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+        app:layout_constraintStart_toEndOf="@+id/tvAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvAddress" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Checked"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#3B803D"
+        android:text="Save"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Delete"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#434242"
+        android:text="Cancel"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
